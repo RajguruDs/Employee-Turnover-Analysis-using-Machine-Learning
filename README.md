@@ -60,26 +60,31 @@ Shows feature relationships with `left`:
 
 ### ✅ 2. Classification Report Heatmap
 ![Classification Report](Images/classificationreport.png)
+
 A Random Forest classifier achieved high performance (F1-score = 0.98), indicating strong model accuracy across classes.
 
 **Inference:**
-Precision, Recall, F1-Score for both classes (0 = Stayed, 1 = Left) are very high (0.97–0.98).
-This means the model performs extremely well in:
-Correctly identifying employees who stayed.
-Correctly predicting employees who left.
-High values in all metrics indicate minimal misclassification and balanced performance.
-The classifier (likely Random Forest) has learned important features well without overfitting.
-----
+- **Precision, Recall, F1-Score** for both classes (0 = Stayed, 1 = Left) are very high (**0.97–0.98**).
+- This means the model performs extremely well in:
+  - Correctly identifying employees who stayed.
+  - Correctly predicting employees who left.
+- High values in all metrics indicate **minimal misclassification** and **balanced performance**.
+- The classifier (likely Random Forest) has learned important features well **without overfitting**.
+
+---
+
 ### ✅ 3. Clustering Analysis
 ![Cluster](Images/cluster.png)
 
-👥 K-Means Clustering of Employees Who Left
+👥 **K-Means Clustering of Employees Who Left**
 
 **Inference:**
-Three clear clusters of employees who left:
-Cluster 0: Low satisfaction, low last evaluation – possibly disengaged or neglected employees.
-Cluster 1: High satisfaction and high last evaluation – possibly high achievers who may have better opportunities elsewhere or felt underutilized.
-Cluster 2: Very low satisfaction, but high evaluation – suggests burnout or stress under pressure.
+- **Three clear clusters** of employees who left:
+  - **Cluster 0**: Low satisfaction, low last evaluation – possibly **disengaged or neglected** employees.
+  - **Cluster 1**: High satisfaction and high last evaluation – possibly **high achievers** who may have **better opportunities elsewhere** or felt **underutilized**.
+  - **Cluster 2**: Very low satisfaction, but high evaluation – suggests **burnout** or **stress under pressure**.
+- This clustering helps HR understand employee **behavioral patterns** and can guide **targeted retention strategies**.
+
 
 
 ## ⚙️ Model Building
@@ -131,9 +136,9 @@ The ROC (Receiver Operating Characteristic) curve is a graphical plot that illus
 
 ## 🤝 Let’s Connect
 
-💼 [LinkedIn](https://www.linkedin.com/in/yourprofile)  
-🐙 [GitHub](https://github.com/yourusername)  
-📧 your.email@example.com
+💼 [LinkedIn](www.linkedin.com/in/rajguru-mathiyalagan-63b921244)  
+🐙 [GitHub]((https://github.com/RajguruDs/Rajguru))
+📧 rajguru21.ds@gmail.com  
 
 ---
 
