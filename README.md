@@ -157,10 +157,8 @@ employee-turnover-analysis/
 ├── README.md
 ├── requirements.txt
 └── images/
-    ├── heatmap.png
-    ├── class_imbalance.png
-    ├── model_accuracy.png
-    ├── roc_random_forest.png
-    ├── roc_logistic_regression.png
-    └── roc_gradient_boosting.png
+    ├── ROC.png
+    ├── classificationreport.png
+    ├── cluster.png
+    └── heatmap.png
 ```
