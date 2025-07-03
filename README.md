@@ -5,7 +5,7 @@ A data science project aimed at analyzing HR data to identify key factors behind
 
 ---
 
-🎯 Business Use Case
+### 🎯 Business Use Case
 The project aims to:
 - Predict employee attrition.
 - Analyze patterns among employees who left.
