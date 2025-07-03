@@ -61,7 +61,7 @@ Shows feature relationships with `left`:
 ---
 
 ### ✅ 4. Feature Distributions: Left vs Stayed
-![Feature Distribution ](Images/distribution .png)
+![Feature Distribution ](Images/distribution.png)
 
 This visualization compares the distribution of key features between employees who **left** (1) and those who **stayed** (0).
 
