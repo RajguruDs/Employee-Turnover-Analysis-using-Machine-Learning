@@ -5,6 +5,12 @@ A data science project aimed at analyzing HR data to identify key factors behind
 
 ---
 
+🎯 Business Use Case
+The project aims to:
+- Predict employee attrition.
+- Analyze patterns among employees who left.
+- Recommend actionable insights to HR based on data trends.
+
 ## 📊 Problem Statement
 
 High employee turnover is costly and disruptive. Companies struggle to understand **why employees leave** and **how to retain them**. This project addresses:
@@ -43,7 +49,7 @@ High employee turnover is costly and disruptive. Companies struggle to understan
 
 Shows feature relationships with `left`:
 
-![Heatmap](images/heatmap.png)
+![Heatmap](Images/heatmap.png)
 
 **Inference:**
 - 🔻 `satisfaction_level`: **-0.39** correlation → lower satisfaction = more likely to leave
@@ -52,16 +58,29 @@ Shows feature relationships with `left`:
 
 ---
 
-### ✅ 2. Class Imbalance Check
+### ✅ 2. Classification Report Heatmap
+![Classification Report](Images/classificationreport.png)
+A Random Forest classifier achieved high performance (F1-score = 0.98), indicating strong model accuracy across classes.
 
-Bar graph showing imbalance in target classes:
+**Inference:**
+Precision, Recall, F1-Score for both classes (0 = Stayed, 1 = Left) are very high (0.97–0.98).
+This means the model performs extremely well in:
+Correctly identifying employees who stayed.
+Correctly predicting employees who left.
+High values in all metrics indicate minimal misclassification and balanced performance.
+The classifier (likely Random Forest) has learned important features well without overfitting.
+----
+### ✅ 3. Clustering Analysis
+![Cluster](Images/cluster.png)
 
-![Class Imbalance](images/class_imbalance.png)
+👥 K-Means Clustering of Employees Who Left
 
-**Inference:**  
-Dataset is slightly imbalanced — applied **SMOTE** for oversampling to avoid bias.
+**Inference:**
+Three clear clusters of employees who left:
+Cluster 0: Low satisfaction, low last evaluation – possibly disengaged or neglected employees.
+Cluster 1: High satisfaction and high last evaluation – possibly high achievers who may have better opportunities elsewhere or felt underutilized.
+Cluster 2: Very low satisfaction, but high evaluation – suggests burnout or stress under pressure.
 
----
 
 ## ⚙️ Model Building
 
@@ -93,18 +112,8 @@ Dataset is slightly imbalanced — applied **SMOTE** for oversampling to avoid b
 The ROC (Receiver Operating Characteristic) curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system. The Area Under Curve (AUC) value ranges from 0 to 1. The closer to 1, the better the model.
 
 ### 🔷 Random Forest
-![ROC RF](images/roc_random_forest.png)  
+![ROC RF](Images/ROC.png)  
 **AUC: 0.99** — Outstanding performance
-
-### 🔷 Logistic Regression
-![ROC LR](images/roc_logistic_regression.png)  
-**AUC: ~0.88**
-
-### 🔷 Gradient Boosting
-![ROC GB](images/roc_gradient_boosting.png)  
-**AUC: ~0.93**
-
-> 🔑 **Note:** Random Forest had the **highest AUC score** and was therefore selected as the final model.
 
 ---
 
