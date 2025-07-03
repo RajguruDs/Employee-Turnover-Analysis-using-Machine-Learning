@@ -137,7 +137,7 @@ The ROC (Receiver Operating Characteristic) curve is a graphical plot that illus
 ## 🤝 Let’s Connect
 
 💼 [LinkedIn](www.linkedin.com/in/rajguru-mathiyalagan-63b921244)  
-🐙 [GitHub]((https://github.com/RajguruDs/Rajguru))
+🐙 [GitHub](https://github.com/RajguruDs/Rajguru)
 📧 rajguru21.ds@gmail.com  
 
 ---
