@@ -10,8 +10,10 @@ The project aims to:
 - Predict employee attrition.
 - Analyze patterns among employees who left.
 - Recommend actionable insights to HR based on data trends.
+  
+---
 
-## 📊 Problem Statement
+### 📊 Problem Statement
 
 High employee turnover is costly and disruptive. Companies struggle to understand **why employees leave** and **how to retain them**. This project addresses:
 
