@@ -115,14 +115,16 @@ These patterns reinforce that **extremes in workload, satisfaction, and recognit
 
 ### 📈 Accuracy Comparison
 
-![Classification Report](Images/classificationreport.png)
-
 - ✅ **Random Forest**: 99%
 - Gradient Boosting: 96%
 - Logistic Regression: 79%
 - SVM: 94%
 - KNN: 93%
-- 
+  
+![Classification Report](Images/classificationreport.png)
+
+
+
 As we can see Random Forest classifier achieved high performance (F1-score = 0.98), indicating strong model accuracy across classes.
 
 **Inference:**
