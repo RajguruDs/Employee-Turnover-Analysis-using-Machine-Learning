@@ -58,18 +58,29 @@ Shows feature relationships with `left`:
 
 ---
 
-### ✅ 2. Classification Report Heatmap
-![Classification Report](Images/classificationreport.png)
+### ✅ 4. Feature Distributions: Left vs Stayed
+![Feature Distributions](Images/distribution.png)
 
-A Random Forest classifier achieved high performance (F1-score = 0.98), indicating strong model accuracy across classes.
+This visualization compares the distribution of key features between employees who **left** (1) and those who **stayed** (0).
 
 **Inference:**
-- **Precision, Recall, F1-Score** for both classes (0 = Stayed, 1 = Left) are very high (**0.97–0.98**).
-- This means the model performs extremely well in:
-  - Correctly identifying employees who stayed.
-  - Correctly predicting employees who left.
-- High values in all metrics indicate **minimal misclassification** and **balanced performance**.
-- The classifier (likely Random Forest) has learned important features well **without overfitting**.
+- **Satisfaction Level**:
+  - Employees who left tend to have **low satisfaction levels**.
+  - Very few high-satisfaction employees left, reinforcing its role as a strong attrition factor.
+  
+- **Last Evaluation**:
+  - Leavers are concentrated at **very low and very high evaluation scores**.
+  - High evaluation + low satisfaction may signal **burnout**.
+  
+- **Average Monthly Hours**:
+  - Employees who left often worked either **very low or very high hours**, suggesting both **underutilization** and **overwork** contribute to exits.
+  
+- **Number of Projects**:
+  - Those with **2 or 6–7 projects** are more likely to leave.
+  - Implies that both **under-engagement** and **overload** can lead to attrition.
+
+These patterns reinforce that **extremes in workload, satisfaction, and recognition** are risk zones for employee turnover.
+
 
 ---
 
@@ -102,13 +113,23 @@ A Random Forest classifier achieved high performance (F1-score = 0.98), indicati
 
 ### 📈 Accuracy Comparison
 
-![Model Accuracy Bar](images/model_accuracy.png)
+![Classification Report](Images/classificationreport.png)
 
 - ✅ **Random Forest**: 99%
 - Gradient Boosting: 96%
 - Logistic Regression: 79%
 - SVM: 94%
 - KNN: 93%
+- 
+As we can see Random Forest classifier achieved high performance (F1-score = 0.98), indicating strong model accuracy across classes.
+
+**Inference:**
+- **Precision, Recall, F1-Score** for both classes (0 = Stayed, 1 = Left) are very high (**0.97–0.98**).
+- This means the model performs extremely well in:
+  - Correctly identifying employees who stayed.
+  - Correctly predicting employees who left.
+- High values in all metrics indicate **minimal misclassification** and **balanced performance**.
+- The classifier (likely Random Forest) has learned important features well **without overfitting**.
 
 ---
 
@@ -165,5 +186,6 @@ employee-turnover-analysis/
     ├── ROC.png
     ├── classificationreport.png
     ├── cluster.png
+    ├── distribution.png
     └── heatmap.png
 ```
